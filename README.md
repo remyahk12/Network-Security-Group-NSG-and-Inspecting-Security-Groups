@@ -5,11 +5,6 @@
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -23,7 +18,19 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
 
-<h2>High-Level Steps</h2>
+<h2>Step 1 :Creating the Resource Group in Azure VM</h2>
+<img src ="https://github.com/user-attachments/assets/de722a43-3029-4c2e-9a9c-e85912e29525"height="80%" width="80%" />
+
+<h2>Step 2 : Creating Windows VM in the resource group created with a new virtual network and subnet</h2>
+<img src ="https://github.com/user-attachments/assets/746cf11c-ceb0-427f-825c-f16de6f9e046" height ="80%" width ="80%" />
+
+<h2>Step 3 : Create a Linux (Ubuntu) VM
+While creating the VM, select the previously created Resource Group and Virtual Network—the Virtual Network MUST BE THE SAME.
+</h2>
+<img src ="https://github.com/user-attachments/assets/3bc033ae-6ed8-414f-96ef-292a5df4e85a" height ="80%" width ="80%" />
+
+
+
 
 - Step 1
 - Step 2
