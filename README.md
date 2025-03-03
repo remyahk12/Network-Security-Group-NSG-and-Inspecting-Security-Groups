@@ -48,24 +48,16 @@ Observe ping requests and replies within WireShark
  height ="80%" width ="80%" />
  <h3>Step 2:Open the Network Security Group your Ubuntu VM is using and disable incoming (inbound) ICMP traffic
 </h3>
-<img src="https://github.com/user-attachments/assets/c4e15dcf-a4ca-4e70-ac41-a2498b5380e4"
-
- height ="80%" width ="80%" />
+<img src="https://github.com/user-attachments/assets/c4e15dcf-a4ca-4e70-ac41-a2498b5380e4" height ="80%" width ="80%" />
  <h3>Step 3:Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity
 </h3>
-<img src="https://github.com/user-attachments/assets/bd8dc660-584d-42d5-b269-63c85b5ddd37"
-height ="80%" width ="80%" />
+<img src="https://github.com/user-attachments/assets/bd8dc660-584d-42d5-b269-63c85b5ddd37"height ="80%" width ="80%" />
 <h3>Step 4:Re-enable ICMP traffic for the Network Security Group your Ubuntu VM is
 </h3>
-<img src="https://github.com/user-attachments/assets/f1915771-cb28-4742-827f-bfbd183a6d72"
-
-height ="80%" width ="80%" />
+<img src="https://github.com/user-attachments/assets/f1915771-cb28-4742-827f-bfbd183a6d72"height ="80%" width ="80%" />
 <h3>Step 5:Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity 
 </h3>
-<img src="https://github.com/user-attachments/assets/93c98dbb-7aea-4628-aa5a-1004b71b9771"
-
-
-height ="80%" width ="80%" />
+<img src="https://github.com/user-attachments/assets/93c98dbb-7aea-4628-aa5a-1004b71b9771" height ="80%" width ="80%" />
 
 
 
