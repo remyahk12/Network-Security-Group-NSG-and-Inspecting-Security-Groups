@@ -68,12 +68,26 @@ Open PowerShell, and type: ssh labuser@<private IP address>
 linux script (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark
 <img src="https://github.com/user-attachments/assets/4e22e8d4-e602-4c4b-9160-7e9ea911df69" height ="80%" width ="80%" />
 </h3>
-<h2> <b>Observe DHCP Traffic)</b></h2>
+<h2> <b>Observe DHCP Traffic</b></h2>
 <h3>Step 1: In Wireshark, filter for DHCP traffic(udp.port == 67 || udp.port ==68) only
 Step2: Open PowerShell as admin and run: ipconfig /release ipconfig /renew
 Observe the DHCP traffic appearing in WireShark
 We can see the Discover , offer ,renew and acknowledge process between DHCP server and client machine inthe traffic
  <img src="https://github.com/user-attachments/assets/fc533bbe-feaa-445a-a552-da3096edb656" height ="80%" width ="80%" />
+</h3>
+
+<h2> <b>Observe DNS Traffic</b></h2>
+<h3>Step 1: In Wireshark, filter for DNS traffic(udp.port == 53) only
+Step2: Open PowerShell as admin and run: nslookup google.com
+Observe the DNS traffic appearing in WireShark
+
+<img src="https://github.com/user-attachments/assets/a9cf0e3c-5ca4-48f4-90d5-fddeb761ff94" height ="80%" width ="80%" />
+</h3>
+
+<h2> <b>Observe RDP Traffic</b></h2>
+<h3>Step 1: In Wireshark, filter for RDP traffic only (tcp.port == 3389)
+Observe the immediate non-stop spam of traffic.We can see a non stop spamming traffic .Its because the RDP (protocol) is constantly showing  a live stream from one computer to another, therefor traffic is always being transmitted
+<img src="https://github.com/user-attachments/assets/114606ce-9bfe-4861-b0fc-3c65cd0c139d" height ="80%" width ="80%" />
 </h3>
 
 
@@ -82,26 +96,4 @@ We can see the Discover , offer ,renew and acknowledge process between DHCP serv
 
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
