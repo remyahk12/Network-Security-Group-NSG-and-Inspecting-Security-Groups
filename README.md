@@ -67,7 +67,14 @@ Open PowerShell, and type: ssh labuser@<private IP address>
 
 linux script (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark
 <img src="https://github.com/user-attachments/assets/4e22e8d4-e602-4c4b-9160-7e9ea911df69" height ="80%" width ="80%" />
- </h3>
+</h3>
+<h2> <b>Observe DHCP Traffic)</b></h2>
+<h3>Step 1: In Wireshark, filter for DHCP traffic(udp.port == 67 || udp.port ==68) only
+Step2: Open PowerShell as admin and run: ipconfig /release ipconfig /renew
+Observe the DHCP traffic appearing in WireShark
+We can see the Discover , offer ,renew and acknowledge process between DHCP server and client machine inthe traffic
+ <img src="https://github.com/user-attachments/assets/fc533bbe-feaa-445a-a552-da3096edb656" height ="80%" width ="80%" />
+</h3>
 
 
 
