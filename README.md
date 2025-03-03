@@ -58,7 +58,16 @@ Observe ping requests and replies within WireShark
 <h3>Step 5:Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity 
 </h3>
 <img src="https://github.com/user-attachments/assets/93c98dbb-7aea-4628-aa5a-1004b71b9771" height ="80%" width ="80%" />
+<h2><b>Observe SSH Traffic</b></h2>
+<h3> Step 1: Back in Wireshark, start a packet capture up
+Filter for SSH traffic only
+From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address)
+Open PowerShell, and type: ssh labuser@<private IP address>
+<img src="https://github.com/user-attachments/assets/94fbe4d1-4704-4dc7-aaaf-7df37729842c" height ="80%" width ="80%" />
 
+linux script (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark
+<img src="https://github.com/user-attachments/assets/4e22e8d4-e602-4c4b-9160-7e9ea911df69" height ="80%" width ="80%" />
+ </h3>
 
 
 
